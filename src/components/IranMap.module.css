@@ -16,9 +16,9 @@
   background-color: #333;
   color: #fff;
   margin: 0;
-  padding: 0 5px;
+  /* padding: 0 5px; */
   text-align: center;
-  font-size: 0.78em;
+  font-size: 1.78em;
   line-height: 26px;
   border-radius: 2px;
   opacity: 0.8;
@@ -32,7 +32,9 @@
 
 .map .svg {
   position: relative;
-  height: 450px;
+  max-height: 473px;
+  max-width: 100%;
+  width: 400px;
   transition: transform 2.5s ease;
   overflow: auto;
 }
@@ -42,16 +44,19 @@
 }
 
 .province {
-  fill: #999;
+  fill: #c3cad3;
 }
 
 .map .sea path,
 .map .lake path {
-  fill: #6caed8;
+  /* fill: #e2f4ff; */
+  stroke: #b9b9b9;
+  stroke-width: 1px;
+  fill: #f1f1f1;
 }
 
 .map .province path:hover {
-  fill: #c7414a;
+  fill: #da9f51;
   cursor: crosshair;
 }
 

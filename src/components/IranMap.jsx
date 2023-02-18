@@ -25,11 +25,16 @@ const IranMap = () => {
   const { x, y } = useMouse();
   const [provinces] = useState(() => iranProvinces);
   const [provinceName, setProvinceName] = useState("");
+  const [provinceValue, setProvinceValue] = useState("");
   const [provinceNameOnClick, setProvinceNameOnClick] = useState("");
   const [mapZoom, setMapZoom] = useState(false);
   const [provinceSelected, setProvinceSelected] = useState(false);
   const [cities, setCities] = useState(["تمام ایران"]);
 
+  function hoverProvinceHandle(name, value) {
+    setProvinceName(name);
+    setProvinceValue(value);
+  }
   return (
     <>
       {provinceSelected && (
@@ -81,14 +86,22 @@ const IranMap = () => {
             }}
           />
           <span className={styles.show_title}>
-            {provinceName}
-            <style jsx>{`
-              span {
-                left: ${x + 5 + "px"};
-                top: ${y + 5 + "px"};
-                z-index: 999;
-              }
-            `}</style>
+           <>
+           {provinceName && (
+             <div className="m-2">
+             {provinceName}
+             <br />
+             {provinceValue}
+             <style jsx>{`
+               span {
+                 left: ${x + 5 + "px"};
+                 top: ${y + 5 + "px"};
+                 z-index: 999;
+               }
+             `}</style>
+           </div>
+           )}
+           </>
           </span>
           <svg
             className={
@@ -111,7 +124,9 @@ const IranMap = () => {
                     key={province.id}
                     className={province.className}
                     d={province.d}
-                    onMouseOver={() => setProvinceName(province.name)}
+                    onMouseOver={() =>
+                      hoverProvinceHandle(province.name, province.value)
+                    }
                     onMouseLeave={() => setProvinceName("")}
                     onClick={() => {
                       setCities(province.cities);

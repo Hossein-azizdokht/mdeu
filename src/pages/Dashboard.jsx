@@ -3,7 +3,7 @@ import PageTitle from "../components/pageTitles/PageTitle";
 import { Row, Col } from "react-bootstrap";
 import CardItem from "../components/dashboard/cardItem";
 import { Baar } from "../components/dashboard/barChart";
-import { LineChart, SingleBaar } from "../components/dashboard/lineChart";
+import { SingleBaar } from "../components/dashboard/singleBarChart";
 import { PieChart } from "../components/dashboard/pieChart";
 import IranMap from "../components/IranMap";
 // import { Calendar } from "react-modern-calendar-datepicker";
@@ -37,10 +37,10 @@ const Dashboard = () => {
           <Row>
             <Col lg={5}>
               <div className="Card">
-                <SingleBaar />
+                <Baar />
               </div>
               <div className="Card">
-                <Baar />
+                <SingleBaar />
               </div>
             </Col>
             <Col lg={4}>
@@ -49,16 +49,11 @@ const Dashboard = () => {
               </div>
             </Col>
             <Col lg={3}>
-            <Row>
-              <Col md={12}>
-                <div className="Card">
-                  <PieChart />
-                </div>
-              </Col>
-            </Row>
-          </Col>
+              <div className="Card">
+                <PieChart />
+              </div>
+            </Col>
           </Row>
-          
         </Row>
       </div>
     </>

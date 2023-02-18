@@ -105,3 +105,6 @@
   a{
     text-decoration: none;
   }
+  [class^="col-"]{
+    padding: 0 5px !important;
+  }

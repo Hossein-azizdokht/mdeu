@@ -81,5 +81,5 @@ export const data = {
 };
 
 export function Baar() {
-  return <Bar options={options} data={data} />;
+  return <Bar options={options} data={data} height={110}/>;
 }

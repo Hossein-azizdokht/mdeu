@@ -34,6 +34,7 @@ const iranProvinces = [
       "نمين",
       "نير",
     ],
+    value:74
   },
   {
     id: 3,
@@ -63,6 +64,7 @@ const iranProvinces = [
        "هشترود",
        "هوراند",
     ],
+    value:74
   },
   {
     id: 4,
@@ -90,6 +92,7 @@ const iranProvinces = [
         "میاندوآب",
         "نقده",
     ],
+    value:74
   },
   {
     id: 5,
@@ -113,6 +116,7 @@ const iranProvinces = [
       "دلوار",
       "عسلویه",
     ],
+    value:74
   },
   {
     id: 6,
@@ -131,6 +135,7 @@ const iranProvinces = [
       "سامان",
       "خانمیرزا",
     ],
+    value:74
   },
   {
     id: 7,
@@ -204,6 +209,7 @@ const iranProvinces = [
       "ني ريز",
       "کوار",
     ],
+    value:74
   },
   {
     id: 8,
@@ -233,6 +239,7 @@ const iranProvinces = [
       "منجيل",
       "هشتپر",
     ],
+    value:956
   },
   {
     id: 9,
@@ -265,6 +272,7 @@ const iranProvinces = [
       "نوده خاندوز",
       "نوکنده",
     ],
+    value:74
   },
   {
     id: 10,
@@ -283,6 +291,7 @@ const iranProvinces = [
       "فامنین",
       "درگزین",
     ],
+    value:123
   },
   {
     id: 11,
@@ -304,6 +313,7 @@ const iranProvinces = [
       "كيش",
       "ميناب",
     ],
+    value:356
   },
   {
     id: 12,
@@ -356,6 +366,7 @@ const iranProvinces = [
       "ورزنه",
       "هرند",
     ],
+    value:157
   },
   {
     id: 14,
@@ -387,6 +398,7 @@ const iranProvinces = [
       "منوجان",
       "نرماشیر",
     ],
+    value:745
   },
   {
     id: 15,
@@ -425,6 +437,7 @@ const iranProvinces = [
       "مانه و سملقان",
       "راز و جرگلان",
     ],
+    value:614
   },
   {
     id: 17,
@@ -466,6 +479,7 @@ const iranProvinces = [
       "مه‌ولات ",
       "نیشابور",
     ],
+    value:742
   },
   {
     id: 18,
@@ -485,6 +499,7 @@ const iranProvinces = [
       "قائنات ",
       "نهبندان",
     ],
+    value:525
   },
   {
     id: 19,
@@ -522,6 +537,7 @@ const iranProvinces = [
       "هندیجان",
       "هویزه",
     ],
+    value:354
   },
   {
     id: 20,
@@ -539,6 +555,7 @@ const iranProvinces = [
       "لنده ",
       "مارگون",
     ],
+    value:34
   },
   {
     id: 21,
@@ -557,6 +574,7 @@ const iranProvinces = [
       "کامیاران",
       "مریوان",
     ],
+    value:45
   },
   {
     id: 22,
@@ -576,6 +594,7 @@ const iranProvinces = [
       "سلسله ",
       "کوهدشت",
     ],
+    value:85
   },
   {
     id: 23,
@@ -596,6 +615,7 @@ const iranProvinces = [
     "فراهان",
     "محلات",
    ],
+    value:65
   },
   {
     id: 24,
@@ -627,6 +647,7 @@ const iranProvinces = [
 "نور",
 "نوشهر",
     ],
+    value:5545
   },
   {
     id: 25,
@@ -643,6 +664,7 @@ const iranProvinces = [
       "سیردان",
       "کوهین",
     ],
+    value:4
   },
   {
     //writen by me, not copied and it's not alphabetize
@@ -668,6 +690,7 @@ const iranProvinces = [
       "گرمسار",
       "مهدی شهر",
     ],
+    value:65
   },
   {
     id: 28,
@@ -702,6 +725,7 @@ const iranProvinces = [
       "هامون",
       "هیرمند",
     ],
+    value:785
   },
   {
     id: 29,
@@ -728,6 +752,7 @@ const iranProvinces = [
 
 
     ],
+    value:25
   },
   {
     id: 30,
@@ -745,6 +770,7 @@ const iranProvinces = [
       "هرات",
       "يزد",
     ],
+    value:65
   },
   {
     id: 31,
@@ -761,6 +787,7 @@ const iranProvinces = [
        "طارم",
       "ماهنشان",
     ],
+    value:45
   },
 ];
 

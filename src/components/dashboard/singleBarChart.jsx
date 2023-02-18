@@ -40,7 +40,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: "بودجه تخصیصی و مصرفی",
+      // text: "بودجه تخصیصی و مصرفی",
       font: {
         family: "IRANSans",
       },
@@ -59,10 +59,10 @@ export const data = {
   labels,
   datasets: [
       {
-          label: "بودجه مصرفی",
+          label: "",
         //   data: labels.map(() => faker.datatype.number({ min: 0, max: 700 })),
         data: [200,125,442,354,125,234],
-          backgroundColor: "rgba(53, 162, 235, 0.7)",
+          backgroundColor: "rgba(250, 180, 135, 0.7)",
         }
   ],
   font: {
@@ -71,5 +71,5 @@ export const data = {
 };
 
 export function SingleBaar() {
-  return <Bar options={options} data={data} />;
+  return <Bar options={options} data={data} height={110} />;
 }
