@@ -1,0 +1,52 @@
+//bootstrap navbar
+.customNav {
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: var(--primary-color) !important;
+  padding: 1.5rem;
+  .menu,
+  .navWrp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 13px;
+    svg {
+      font-size: 22px;
+      margin-left: 10px;
+    }
+  }
+  .navbar-brand {
+    margin: auto;
+  }
+  @media (max-width: 1199px) {
+    height: auto;
+    flex-direction: row;
+    width: 100vw;
+    .navbar-brand {
+      margin-right: 2rem !important;
+      img {
+        width: 70px !important;
+      }
+    }
+    .navWrp {
+      flex-direction: row !important;
+    }
+  }
+  hr {
+    border-color: #fff;
+  }
+}
+
+
+//calendar
+.Calendar{
+    box-shadow: none;
+    max-width: 100%;
+    margin: auto;
+}

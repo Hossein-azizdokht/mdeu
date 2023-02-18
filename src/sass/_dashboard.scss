@@ -1,0 +1,27 @@
+.cardItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 7px;
+  color: #fff;
+  transition: all 0.2s ease;
+  &.green {
+    background-color: #229b5e;
+  }
+  &.blue {
+    background-color: #225a9b;
+  }
+  &.orange {
+    background-color: #eb8939;
+  }
+  &.cyan {
+    background-color: #229b9b;
+  }
+  &:hover {
+    box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.1) inset, 0 0 0 8px rgba(0, 0, 0, 0.05);
+  }
+  svg {
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+  }
+}
