@@ -13,8 +13,8 @@
   .show_title {
     display: block;
     position: absolute;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffffbb !important;
+    color: #414141 !important;
     margin: 0;
     padding: 0 5px;
     text-align: center;
@@ -23,6 +23,7 @@
     border-radius: 2px;
     opacity: 0.8;
     z-index: 999;
+    box-shadow: 0 0 0px 1px #0000002e !important;
   }
   
   .map {
@@ -82,7 +83,6 @@
   
   .zoom_in::before {
     content: "بزرگ نمایی نقشه";
-    background-image: url(../assets/bx-zoom-in.svg);
     background-repeat: no-repeat;
     background-position: right center;
     padding: 0.7rem 1.7rem 0.7rem 0.7rem;
@@ -90,7 +90,6 @@
   
   .zoom_out::before {
     content: "کوچک ‌نمایی نقشه";
-    background-image: url(../assets/bx-zoom-out.svg);
     background-repeat: no-repeat;
     background-position: right center;
     padding: 0.7rem 1.7rem 0.7rem 0.7rem;
@@ -126,7 +125,6 @@
     color: #777070;
     font-weight: normal;
     font-style: italic;
-    background-image: url("../assets/bx-current-location.svg");
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 1.8rem;
@@ -186,7 +184,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(128, 128, 128, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 99999;
   }
   

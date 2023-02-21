@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import iranProvinces from "../mock/map/iranProvinces";
 import iranBorder, { caspianD, persianGulfD } from "../mock/map/IranMapData";
 import styles from "./IranMap.module.css";
+import { ProgressBar } from "react-bootstrap";
 const useMouse = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -16,7 +17,7 @@ const useMouse = () => {
     const mapEffect = document.querySelector("svg");
     mapEffect.addEventListener("mousemove", handle);
     return () => document.removeEventListener("mousemove", handle);
-  }, [setMousePosition]);
+  }, [mousePosition]);
 
   return mousePosition;
 };
@@ -85,24 +86,32 @@ const IranMap = () => {
               setMapZoom(!mapZoom);
             }}
           />
-          <span className={styles.show_title}>
-           <>
-           {provinceName && (
-             <div className="m-2">
-             {provinceName}
-             <br />
-             {provinceValue}
-             <style jsx>{`
-               span {
-                 left: ${x + 5 + "px"};
-                 top: ${y + 5 + "px"};
-                 z-index: 999;
-               }
-             `}</style>
-           </div>
-           )}
-           </>
-          </span>
+          <>
+            {provinceName && (
+              <>
+                <span className={styles.show_title}>
+                  <div className="m-2">
+                    <h6>{provinceName}</h6>
+                    <h6>{provinceValue}</h6>
+                    <style jsx>{`
+                      span {
+                        left: ${x + 5 + "px"};
+                        top: ${y + 5 + "px"};
+                        z-index: 999;
+                      }
+                    `}</style>
+                  </div>
+                  <div
+                    className="gloalProgressWrp d-flex flex-column"
+                    title="درصد پیشرفت اهداف"
+                  >
+                    <div>محل نمایش اطلاعات کلی از استان انتخابی</div>
+                    
+                  </div>
+                </span>
+              </>
+            )}
+          </>
           <svg
             className={
               mapZoom ? styles.svg + " " + styles.map_zoom : styles.svg

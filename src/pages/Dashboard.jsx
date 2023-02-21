@@ -6,6 +6,7 @@ import { Baar } from "../components/dashboard/barChart";
 import { SingleBaar } from "../components/dashboard/singleBarChart";
 import { PieChart } from "../components/dashboard/pieChart";
 import IranMap from "../components/IranMap";
+import GloasProgress from "../components/dashboard/gloasProgress";
 // import { Calendar } from "react-modern-calendar-datepicker";
 // import "react-modern-calendar-datepicker/lib/DatePicker.css";
 
@@ -37,20 +38,27 @@ const Dashboard = () => {
           <Row>
             <Col lg={5}>
               <div className="Card">
+                <div className="title">وضعیت هدف‌ها</div>
                 <Baar />
               </div>
               <div className="Card">
+                <div className="title">وضعیت هدف‌ها</div>
                 <SingleBaar />
-              </div>
-            </Col>
-            <Col lg={4}>
-              <div className="Card">
-                <IranMap />
               </div>
             </Col>
             <Col lg={3}>
               <div className="Card">
-                <PieChart />
+                <div className="title">وضعیت هدف‌ها</div>
+                <IranMap />
+              </div>
+            </Col>
+            <Col lg={4}>
+              <div className="Card">
+                <div className="title">وضعیت هدف‌ها</div>
+                <div className="overflow-auto" style={{ maxHeight: "350px" }}>
+                  <GloasProgress />
+                </div>
+                {/* <PieChart /> */}
               </div>
             </Col>
           </Row>
