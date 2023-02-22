@@ -39,7 +39,7 @@ function Sidebar() {
                   </Nav.Link>
                
               
-                  <Nav.Link as={Link} to="/about">
+                  <Nav.Link as={Link} to="/plan">
                     <MdOutlineRateReview />
                     نظام برنامه ریزی
                   </Nav.Link>

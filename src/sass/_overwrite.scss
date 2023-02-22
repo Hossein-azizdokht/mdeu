@@ -16,8 +16,17 @@
   .nav-link {
     color: #fff;
     font-size: 13px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 2px 0;
+    border-radius: 12px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      svg {
+        color: orange;
+      }
+    }
     svg {
-      font-size: 22px;
+      font-size: 26px;
       margin-left: 10px;
     }
   }
@@ -43,10 +52,15 @@
   }
 }
 
-
 //calendar
-.Calendar{
-    box-shadow: none;
-    max-width: 100%;
-    margin: auto;
+.Calendar {
+  box-shadow: none;
+  max-width: 100%;
+  margin: auto;
+}
+
+table.table td {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 13px;
 }

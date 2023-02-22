@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-const GloasProgress = () => {
+const GloasProgress = (props) => {
   const data = [
     { value: 60, label: "احداث 800 مدرسه متوسطه" },
     { value: 10, label: "تاسیس مرکز مشاوره" },
@@ -21,7 +21,7 @@ const GloasProgress = () => {
     <div className="gloalProgressWrp d-flex" title={item.label}>
       <div className="lbl">{item.label}</div>
       <ProgressBar
-        className="flex-grow-1"
+        className={`flex-grow-1 ${props.color}`}
         now={item.value}
         label={`${item.value}%`}
       />

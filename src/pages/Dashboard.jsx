@@ -34,34 +34,46 @@ const Dashboard = () => {
           </Col>
         </Row> */}
         {/* <hr /> */}
+
         <Row>
-          <Row>
-            <Col lg={5}>
-              <div className="Card">
-                <div className="title">وضعیت هدف‌ها</div>
-                <Baar />
+          <Col lg={6}>
+            <div className="Card" style={{ maxHeight: "350px" }}>
+              <div className="title">وضعیت هدف‌ها</div>
+              <SingleBaar />
+            </div>
+          </Col>
+          <Col lg={6}>
+            <div className="Card">
+              <div className="title">سیاست های رهبری</div>
+              <div className="overflow-auto" style={{ maxHeight: "263px" }}>
+                <GloasProgress color="orange-bg" />
               </div>
-              <div className="Card">
-                <div className="title">وضعیت هدف‌ها</div>
-                <SingleBaar />
+              {/* <PieChart /> */}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={4}>
+            <div className="Card h-100">
+              <div className="title">بودجــه</div>
+              <Baar />
+            </div>
+          </Col>
+          <Col lg={4}>
+            <div className="Card h-100">
+              <div className="title">استان ها</div>
+              <IranMap />
+            </div>
+          </Col>
+          <Col lg={4}>
+            <div className="Card h-100">
+              <div className="title">وضعیت هدف‌ها</div>
+              <div className="overflow-auto" style={{ maxHeight: "350px" }}>
+                <GloasProgress />
               </div>
-            </Col>
-            <Col lg={3}>
-              <div className="Card">
-                <div className="title">وضعیت هدف‌ها</div>
-                <IranMap />
-              </div>
-            </Col>
-            <Col lg={4}>
-              <div className="Card">
-                <div className="title">وضعیت هدف‌ها</div>
-                <div className="overflow-auto" style={{ maxHeight: "350px" }}>
-                  <GloasProgress />
-                </div>
-                {/* <PieChart /> */}
-              </div>
-            </Col>
-          </Row>
+              {/* <PieChart /> */}
+            </div>
+          </Col>
         </Row>
       </div>
     </>

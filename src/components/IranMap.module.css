@@ -33,7 +33,7 @@
 
 .map .svg {
   position: relative;
-  max-height: 473px;
+  height: 340px;
   max-width: 100%;
   width: 400px;
   transition: transform 2.5s ease;

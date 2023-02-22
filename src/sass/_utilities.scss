@@ -31,5 +31,8 @@
     --bs-progress-height: 0.9rem;
     --bs-progress-bar-bg: #66bb6c;
     --bs-progress-border-radius: 3px;
+    &.orange-bg{
+      --bs-progress-bar-bg: #a789ce;
+    }
   }
 }
